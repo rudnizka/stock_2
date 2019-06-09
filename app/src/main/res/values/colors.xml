@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#2e6faf</color>
+    <color name="colorPrimaryDark">#13579b</color>
+    <color name="colorAccent">#2e6faf</color>
+
+    <color name="primary">#2e6faf</color>
+    <color name="primary_light">#5196d9</color>
+    <color name="primary_dark">#124899</color>
+    <color name="primary_10">#1a2e6faf</color>
+    <color name="primary_progress">#55cef2</color>
+
+    <color name="accent">#fbd439</color>
+
+    <color name="white">#fff</color>
+    <color name="white_50">#8fff</color>
+
+    <color name="black">#000000</color>
+    <color name="black_10">#1a000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_70">#a000</color>
+    <color name="transparent">#0000</color>
+
+    <color name="blue">#2e6faf</color>
+    <color name="gray">#a4a6ad</color>
+    <color name="gray_b">#bbb</color>
+    <color name="gray_d">#d9dada</color>
+    <color name="gray_e">#ebebeb</color>
+    <color name="text">#333</color>
+    <color name="text_50">#8333</color>
+    <color name="text_70">#a333</color>
 </resources>

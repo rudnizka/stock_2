@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bar"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pad_20"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/news"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_18" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/pad_40"
+            android:orientation="vertical">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/mainImagePath"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/pad_240" />-->
+
+            <com.dpcsa.compon.custom_components.SimpleImageView
+                android:id="@+id/mainImagePath"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_240"
+                android:scaleType="centerCrop"
+                app:placeholder="@drawable/sms"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"
+                style="@style/st_title"/>
+
+            <com.dpcsa.compon.custom_components.SimpleTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/st_14_text_50"
+                android:layout_marginTop="@dimen/pad_20"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"
+                app:dateFormat="dd.MM.yyyy"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_20"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"
+                style="@style/st_14_text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_240"
+                android:layout_marginTop="@dimen/pad_25">
+
+                <com.dpcsa.compon.custom_components.Gallery
+                    android:id="@+id/imagePaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:placeholder="@drawable/sms"
+                    app:indicator="@id/indicator"/>
+
+                <com.dpcsa.compon.custom_components.PagerIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/pad_20"
+                    app:diametrItem="@dimen/pad_8"
+                    app:itemId="@drawable/indicator"
+                    app:itemSelectId="@drawable/indicator_select" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:lineSpacingExtra="4sp"
+                style="@style/st_14_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

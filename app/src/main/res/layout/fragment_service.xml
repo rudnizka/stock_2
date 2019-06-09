@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bar"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/service"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_18" />
+
+    </RelativeLayout>
+
+    <!--<com.google.android.gms.maps.MapView-->
+        <!--android:id="@+id/map"-->
+        <!--class="com.google.android.gms.maps.SupportMapFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/tool"/>-->
+
+    <com.dpcsa.compon.custom_components.SimpleMapView
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool"
+        app:plusViewId="@id/zoom_plus"
+        app:minusViewId="@id/zoom_minus"
+        app:location="@id/location"/>
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/pad_36"
+        android:layout_marginRight="@dimen/pad_25"
+        android:src="@drawable/position" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginBottom="@dimen/pad_22"
+        android:layout_above="@+id/location"
+        android:src="@drawable/zoom"/>
+
+    <View
+        android:id="@+id/zoom_minus"
+        android:layout_width="@dimen/pad_38"
+        android:layout_height="@dimen/pad_34"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginBottom="@dimen/pad_22"
+        android:layout_above="@+id/location"/>
+
+    <View
+        android:id="@+id/zoom_plus"
+        android:layout_width="@dimen/pad_38"
+        android:layout_height="@dimen/pad_34"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_above="@+id/zoom_minus"/>
+
+
+</RelativeLayout>

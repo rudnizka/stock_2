@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pad_80">
+
+    <com.dpcsa.compon.custom_components.SimpleImageView
+        android:id="@+id/imagePath"
+        android:layout_width="@dimen/pad_40"
+        android:layout_height="@dimen/pad_40"
+        android:layout_marginLeft="@dimen/pad_20"
+        android:layout_centerVertical="true"
+        app:placeholder="@drawable/sms"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        style="@style/st_14_text"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="2sp"
+        android:layout_marginLeft="@dimen/pad_14"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/count"
+        android:layout_toRightOf="@+id/imagePath" />
+
+    <TextView
+        android:id="@+id/count"
+        style="@style/st_12_text_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/sht" />
+
+    <TextView
+        android:id="@+id/sht"
+        style="@style/st_12_text_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ar"
+        android:layout_marginLeft="@dimen/pad_6"
+        android:layout_marginRight="@dimen/pad_6"
+        android:text="@string/sht" />
+
+    <ImageView
+        android:id="@+id/ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/pad_10"
+        android:src="@drawable/arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_d" />
+</RelativeLayout>

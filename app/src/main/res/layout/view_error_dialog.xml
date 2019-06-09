@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/st_error_title"
+        android:layout_marginTop="@dimen/pad_40"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginLeft="@dimen/pad_25" />
+
+    <com.dpcsa.compon.custom_components.SimpleTextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_24"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginLeft="@dimen/pad_25"
+        style="@style/st_error_text"
+        app:alias="message"/>
+
+    <TextView
+        android:id="@+id/contin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_button"
+        style="@style/st_button"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginTop="@dimen/pad_72"
+        android:layout_marginBottom="@dimen/pad_30"
+        android:background="@color/text"
+        android:gravity="center"
+        android:text="@string/contin" />
+
+</LinearLayout>

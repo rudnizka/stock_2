@@ -1,3 +1,96 @@
 <resources>
-    <string name="app_name">stock_2</string>
+    <string name="app_name">Stock-2</string>
+    <string name="google_maps_key">AIzaSyAPYR4EO-U2deKsKbXyNLR06ynnVaO0jCA</string>
+    <string name="youtube_api_key">AIzaSyBXIkt2yT92DWzjRLs3n9oPcd2B7iKRzfs</string>
+
+    // NETWORK ERROR
+    <string name="er_title_def">Увага !</string>
+    <string name="er_message">Помилка в тексті повідомленя серверу</string>
+    <string name="er_connect_title">Підключення до інтернету відсутнє</string>
+    <string name="er_connect">Перевірте ваш доступ до WI-FI або налаштування мобільного зв\'язку</string>
+    <string name="er_timeout">Довго не приходить відповідь з серверу</string>
+    <string name="er_server_error">Помилка серверу</string>
+    <string name="er_json_syntax">Синтаксична помилка в json</string>
+
+    <string name="contin">Продовжити</string>
+    <string name="apply">Застосувати</string>
+    <string name="products">Продукція</string>
+    <string name="service">Сервіс</string>
+    <string name="about">Про нас</string>
+    <string name="news">Новини</string>
+
+    // Language
+    <string name="uk">Українська</string>
+    <string name="ru">Русский</string>
+    <string name="en">English</string>
+    <string name="sel_lang">Выберіть мову</string>
+    <string name="jsonListLang">[{\"id_language\":\"ru\",\"name_language\":\"Русский\"},{\"id_language\":\"uk\",\"name_language\":\"Українська\"},{\"id_language\":\"en\",\"name_language\":\"English\"}]</string>
+
+    // Categories
+    <string name="sht">шт</string>
+    <string name="no_products">У даній категорії товари відсутні</string>
+    <string name="assortment_will_resume">Наш асортимент оновиться \nу найближчий час</string>
+    <string name="let_me_know">Повідомити про надходження</string>
+
+    // Product
+    <string name="charact">Загальні характеристики</string>
+    <string name="show_video">Переглянути відео</string>
+    <string name="requisition">Залишити замовлення</string>
+    <string name="thanks">Дякуємо за замовлення</string>
+    <string name="operator_contact_you">Наш оператор зв\'яжеться із вами найближчим часом для уточнення деталей</string>
+
+    // Map
+    <string name="cost">Вартість ремонтних послуг</string>
+    <string name="repair_sites">Ремонтні майданчики</string>
+    <string name="fast">Швидко - до 3х днів + підмінний фонд</string>
+    <string name="qualitatively">Якісно - гарантія 6 місяців!</string>
+    <string name="convenient">Зручно - майданчики по всій Україні</string>
+    <string name="free">Безкоштовний забір техніки!</string>
+    <string name="choose_site">Обрати майданчик</string>
+    <string name="type_repair">Тип ремонту</string>
+    <string name="count">Кількість</string>
+    <string name="uah_item">грн/шт</string>
+    <string name="uah">\u0020грн</string>
+    <string name="sum_all">Загальна сума:</string>
+
+
+    // COUNTRY
+    <string name="select_country">Вкажіть країну</string>
+
+    // ITEM_FORM
+    <string name="leave_request">Залишити замовлення</string>
+    <string name="your_order">Ваше замовлення</string>
+    <string name="your_name">Ваше ім\'я</string>
+    <string name="your_phone">Ваш телефон</string>
+    <string name="add_comment">Додати коментар</string>
+    <string name="your_comment">Ваш коментар</string>
+    <string name="edit">Редагувати</string>
+    <string name="write_smth_here">Напишіть що-небудь…</string>
+    <string name="send">Надіслати</string>
+    <string name="all_list">Весь список</string>
+    <string name="clear">Очистити</string>
+    <string name="comment">Коментар</string>
+
+    // NEWS
+    <string name="No_current_news">Немає актуальних новин</string>
+    <string name="interesting_information">Найближчим часом ми поділимось цікавою інформацією</string>
+
+    // About
+    <string name="contact_us">Напишіть нам</string>
+    <string name="hotline">Телефон гарячої лінії</string>
+    <string name="full_desc">Повний опис</string>
+    <string name="hide">Згорнути</string>
+    <!--<string name="about_text">ТОВ «Системи модернізації складів»\n«Системи модернізації складів» - українська компанія-виробник.\nГлавная Миссия компании: способствовать повышению эффективности бизнеса наших клиентов. Наша цель – построить компанию международного уровня, путем создания качественной продукции. Комплексные решения компании «СМС» – это разработка, проектирование, производство, монтаж и дальнейшее техническое обслуживание транспортировочных и сортировочных линий согласно пожеланиям заказчика. А именно – производственные линии по сортировке грузов, переработке ягод, фруктов, орехов. В случае необходимости срочного ремонта штабелеров или иной электро и гидравлической техники – существует бригада оперативного реагирования и сервисные службы по всей территории Украины.</string>-->
+    <string name="about_text_1">ТОВ «Системи модернізації складів»\n«Системи модернізації складів» - українська компанія-виробник.\nГоловна Місія компанії: сприяти підвищенню ефективності бізнесу наших клієнтів.\nНаша мета - побудувати компанію міжнародного рівня, шляхом створення якісної продукції.</string>
+    <string name="about_text_2">Комплексні рішення компанії «СМС» - це розробка, проектування, виробництво, монтаж і подальше технічне обслуговування транспортувальних і сортувальних ліній відповідно до побажань замовника.\nА саме – виробничі лінії по сортуванню вантажів, сортуванню ТПВ, переробці ягід, фруктів, овочів, горіхів тощо.\nПереваги роботи з підприємством: багатофункціональне та конкурентоспроможне обладнання, безкоштовний розрахунок вартості проектів, конкретна програма дій та пропозицій в залежності від вибраного замовником ринку та напрямку роботи.\nКомпанія «СМС» - один з лідерів у виробництві комплексних рішень по автоматизації складів з 2006 року, стаючи за ці роки неодноразово володарем звання «Лідер галузі» (2010, 2012, 2015, 2017, 2018), «Лідер ЗЕД» 2017р.\nПродукція підприємства відповідає міжнародним стандартам якості, що підтверджено сертифікатами ISO 9001: 2008, ISO 9001: 2015, TSU.\nТакож є членом Польсько-Української Господарської Палати.\nВолодар портфеля унікальних розробок і ексклюзивних рішень для більш ніж 100 підприємств України і Європи.</string>
+    <string name="write_us">Напишіть нам</string>
+    <string name="add_com">Додати коментар</string>
+    <string name="send_com">Коментар успішно надіслано</string>
+    <string name="appreciate_attention">Ми цінуємо Вашу думку.\nЗворотній зв\'язок допомагає нам підвищити якість сервісу</string>
+
+    <string-array name="prod_grammar">
+        <item>товар</item>
+        <item>товари</item>
+        <item>товарів</item>
+    </string-array>
 </resources>

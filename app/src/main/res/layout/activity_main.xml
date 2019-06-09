@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/tool" />
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_1"
+        android:background="@color/black_10"
+        android:layout_above="@+id/nav"
+        android:orientation="horizontal"/>
+    <RadioGroup
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_tool"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/products"
+            android:textColor="@drawable/selector_menu_text"
+            android:textSize="@dimen/pad_11" />
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:button="@null"
+
+            android:gravity="center"
+            android:drawableTop="@drawable/selector2"
+            android:layout_weight="1"
+            android:textSize="@dimen/pad_11"
+            android:textColor="@drawable/selector_menu_text"
+            android:text="@string/service" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:button="@null"
+
+            android:gravity="center"
+            android:drawableTop="@drawable/selector3"
+            android:layout_weight="1"
+            android:textSize="@dimen/pad_11"
+            android:textColor="@drawable/selector_menu_text"
+            android:text="@string/about" />
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:button="@null"
+
+            android:gravity="center"
+            android:drawableTop="@drawable/selector4"
+            android:layout_weight="1"
+            android:textSize="@dimen/pad_11"
+            android:textColor="@drawable/selector_menu_text"
+            android:text="@string/news" />
+    </RadioGroup>
+
+    <com.dpcsa.compon.custom_components.SheetBottom
+        android:id="@+id/error_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewId="@layout/view_error_dialog"
+        app:negativeViewId="@id/contin"/>
+
+    <com.dpcsa.compon.custom_components.SheetBottom
+        android:id="@+id/lang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewId="@layout/view_lang"/>
+
+    <com.dpcsa.compon.custom_components.SheetBottom
+        android:id="@+id/infoWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:viewId="@layout/view_map"/>
+
+</RelativeLayout>

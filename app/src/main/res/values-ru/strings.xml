@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // NETWORK ERROR
+    <string name="er_title_def">Внимание !</string>
+    <string name="er_message">Ошибка в тексте сообщения сервера</string>
+    <string name="er_connect_title">Отсутствует интернет</string>
+    <string name="er_connect">Проверьте ваш доступ к WI-FI или настройки мобильного соединения</string>
+    <string name="er_timeout">Долго не приходит ответ с сервера</string>
+    <string name="er_server_error">Ошибка сервера</string>
+    <string name="er_json_syntax">Синтаксическая ошибка в json</string>
+
+    <string name="contin">Продолжить</string>
+    <string name="apply">Применить</string>
+    <string name="products">Продукция</string>
+    <string name="service">Сервис</string>
+    <string name="about">О нас</string>
+    <string name="news">Новости</string>
+
+    // Language
+    <string name="sel_lang">Выберите язык</string>
+
+    // Categories
+    <string name="sht">шт</string>
+    <string name="no_products">В данной категории товаров нет</string>
+    <string name="assortment_will_resume">Наш ассортимент обновится \nв ближайшее время</string>
+    <string name="let_me_know">Сообщить о поступлении</string>
+
+    // Product
+    <string name="charact">Основные характеристики</string>
+    <string name="show_video">Посмотреть видео</string>
+    <string name="requisition">Оставить заявку</string>
+    <string name="thanks">Спасибо за заказ</string>
+    <string name="operator_contact_you">Наш оператор свяжется с вами в ближайшее время для уточнения деталей</string>
+
+    // Map
+    <string name="cost">Стоимость ремонтных услуг</string>
+    <string name="repair_sites">Ремонтные площадки</string>
+    <string name="fast">Быстро - до 3х дней + подменный фонд</string>
+    <string name="qualitatively">Качественно - гарантия 6 месяцев!</string>
+    <string name="convenient">Удобно - площадки по всей Украине</string>
+    <string name="free">Бесплатный забор техники!</string>
+    <string name="choose_site">Выбрать площадку</string>
+    <string name="type_repair">Тип ремонта</string>
+    <string name="count">Количество</string>
+    <string name="uah_item">грн/шт</string>
+    <string name="uah">\u0020грн</string>
+    <string name="sum_all">Общая сумма:</string>
+
+    // COUNTRY
+    <string name="select_country">Укажите страну</string>
+
+    // ITEM_FORM
+    <string name="leave_request">Оставить заявку</string>
+    <string name="your_order">Ваш заказ</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="your_phone">Ваш телефон</string>
+    <string name="add_comment">Добавить комментарий</string>
+    <string name="your_comment">Ваш комментарий</string>
+    <string name="edit">Править</string>
+    <string name="write_smth_here">Напишите что-нибудь…</string>
+    <string name="send">Отправить</string>
+    <string name="all_list">Весь список</string>
+    <string name="clear">Очистить</string>
+    <string name="comment">Комментарий</string>
+
+    // NEWS
+    <string name="No_current_news">Актуальные новости отсутствуют</string>
+    <string name="interesting_information">В ближайшее время мы поделимся интересной информацией</string>
+
+    // About
+    <string name="contact_us">Напишите нам</string>
+    <string name="hotline">Телефон горячей линии</string>
+    <string name="full_desc">Полное описание</string>
+    <string name="hide">Свернуть</string>
+    <!--<string name="about_text">ООО «Системы модернизации складов»\«Системы модернизации складов» – украинская компания-производитель.\nГлавная Миссия компании: способствовать повышению эффективности бизнеса наших клиентов. Наша цель – построить компанию международного уровня, путем создания качественной продукции. Комплексные решения компании «СМС» – это разработка, проектирование, производство, монтаж и дальнейшее техническое обслуживание транспортировочных и сортировочных линий согласно пожеланиям заказчика. А именно – производственные линии по сортировке грузов, переработке ягод, фруктов, орехов. В случае необходимости срочного ремонта штабелеров или иной электро и гидравлической техники – существует бригада оперативного реагирования и сервисные службы по всей территории Украины.</string>-->
+    <string name="about_text_1">ООО «Системы модернизации складов»\n«Системы модернизации складов» – украинская компания-производитель.\nГлавная Миссия компании: способствовать повышению эффективности бизнеса наших клиентов.\nНаша цель – построить компанию международного уровня, путем создания качественной продукции.</string>
+    <string name="about_text_2">Комплексные решения компании «СМС» – это разработка, проектирование, производство, монтаж и дальнейшее техническое обслуживание транспортировочных и сортировочных линий согласно пожеланиям заказчика.\nВ том числе сортировальный комплекс по переработке мусора – ТБО (Твердые бытовые отходы).\nКомпания «СМС» – один из лидеров в производстве комплексных решений по автоматизации складов с 2006 года, став за эти годы не только обладателем звания «Лидер отрасли» (2010, 2012, 2015, 2017, 2018), «Лидер ВЭД» 2017р.\nПродукция предприятия соответствует международным стандартам качества, что подверждено сертификатами ISO 9001: 2008, ISO 9001: 2015, TSU.\nТакже является членом Польско-Украинской Хозяйственной Палаты.\nОбладатель портфеля уникальных разработок и эксклюзивных решений для более чем 100 предприятий Украины и Европы.</string>
+    <string name="write_us">Напишите нам</string>
+    <string name="add_com">Добавить комментарий</string>
+    <string name="send_com">Комментарий отправлен успешно</string>
+    <string name="appreciate_attention">Мы ценим Ваше мнение.\nВаша обратная связь помагает нам повышать качество сервиса</string>
+
+
+    <string-array name="prod_grammar">
+        <item>товар</item>
+        <item>товара</item>
+        <item>товаров</item>
+    </string-array>
+</resources>

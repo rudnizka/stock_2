@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/st_title"
+        android:layout_marginTop="@dimen/pad_40"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:layout_marginRight="@dimen/pad_25"/>
+
+    <TextView
+        android:id="@+id/phones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/st_18_text_50"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="@dimen/pad_16"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:layout_marginRight="@dimen/pad_25"/>
+
+    <TextView
+        android:id="@+id/requisition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_button"
+        style="@style/st_button"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginTop="@dimen/pad_40"
+        android:background="@color/text"
+        android:gravity="center"
+        android:text="@string/requisition" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_40"
+        style="@style/st_16_blue"
+        android:layout_marginTop="@dimen/pad_16"
+        android:layout_marginBottom="@dimen/pad_25"
+        android:gravity="center"
+        android:text="@string/cost"/>
+</LinearLayout>

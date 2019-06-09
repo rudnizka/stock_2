@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bar"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pad_20"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/products"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_18" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/apply"
+        android:layout_below="@+id/tool">
+
+        <LinearLayout
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_240">
+
+                <com.dpcsa.compon.custom_components.Gallery
+                    android:id="@+id/imagePaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:placeholder="@drawable/sms"
+                    app:indicator="@id/indicator"/>
+
+                <com.dpcsa.compon.custom_components.PagerIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/pad_20"
+                    app:diametrItem="@dimen/pad_8"
+                    app:itemId="@drawable/indicator"
+                    app:itemSelectId="@drawable/indicator_select" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_24"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/pad_24"
+                    android:layout_height="@dimen/pad_24"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_10"
+                    android:text="@string/show_video"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/pad_12"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/st_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25" />
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/st_14_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_20"
+                android:lineSpacingExtra="4sp" />
+            <TextView
+                android:id="@+id/text2"
+                style="@style/st_14_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:lineSpacingExtra="4sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/full_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/pad_36"
+                style="@style/st_12_blue"
+                android:text="@string/full_desc"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_5" />
+
+            <TextView
+                android:id="@+id/charact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/st_sub_title"
+                android:layout_marginBottom="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_18"
+                android:text="@string/charact" />
+
+            <com.dpcsa.compon.custom_components.StaticList
+                android:id="@+id/description.characteristics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pad_25"
+                app:evenColor="@color/gray_e"
+                app:itemLayoutId="@layout/item_product_char" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/apply"
+        style="@style/st_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/pad_25"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginTop="@dimen/pad_4"
+        android:background="@color/text"
+        android:gravity="center"
+        android:text="@string/requisition" />
+
+</RelativeLayout>

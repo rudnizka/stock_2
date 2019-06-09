@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bar"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/news"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_18" />
+
+        <LinearLayout
+            android:id="@+id/sel_lang"
+            android:layout_width="@dimen/pad_80"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lang_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/pad_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_down"
+                android:layout_marginRight="@dimen/pad_14"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/pad_40"/>
+
+        <RelativeLayout
+            android:id="@+id/no_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/st_title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_190"
+                android:text="@string/No_current_news"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_below="@+id/t1"
+                android:gravity="center"
+                style="@style/st_14_text"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/interesting_information"/>
+
+         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/pad_172"
+                android:src="@drawable/no_connect" />
+
+            <!--<com.dpcsa.compon.custom_components.SimpleTextView-->
+            <!--android:id="@+id/text_tit"-->
+            <!--style="@style/st_title"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/img_no"-->
+            <!--android:layout_marginLeft="@dimen/pad_25"-->
+            <!--android:layout_marginRight="@dimen/pad_25"-->
+            <!--android:layout_marginTop="@dimen/pad_25"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerHorizontal="false"-->
+            <!--android:text="@string/er_connect_title"-->
+            <!--app:alias="title"/>-->
+
+            <!--<com.dpcsa.compon.custom_components.SimpleTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/st_14_text"-->
+            <!--android:layout_below="@+id/text_tit"-->
+            <!--android:layout_marginLeft="@dimen/pad_25"-->
+            <!--android:layout_marginRight="@dimen/pad_25"-->
+            <!--android:layout_marginTop="@dimen/pad_25"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="@string/er_connect"-->
+            <!--app:alias="message"/>-->
+
+            <com.dpcsa.compon.custom_components.SimpleTextView
+                android:id="@+id/text_tit"
+                style="@style/st_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_no"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25"
+                android:gravity="center"
+                android:layout_centerHorizontal="false"
+                app:alias="title"/>
+
+            <com.dpcsa.compon.custom_components.SimpleTextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/st_14_text"
+                android:layout_below="@+id/text_tit"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                app:alias="message"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

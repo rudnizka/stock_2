@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bar"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pad_20"
+            android:src="@drawable/arrow_left" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/products"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/st_title"
+                android:layout_marginTop="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginLeft="@dimen/pad_25"/>
+
+            <com.dpcsa.compon.custom_components.TextViewNumberGrammar
+                android:id="@+id/count"
+                style="@style/st_14_text_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/pad_10"
+                android:layout_marginLeft="@dimen/pad_25"
+                app:stringArray="@array/prod_grammar" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/panel"
+            android:layout_marginTop="@dimen/pad_20"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/pad_40"/>
+
+        <RelativeLayout
+            android:id="@+id/no_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/st_title"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_190"
+                android:text="@string/no_products"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_25"
+                android:layout_below="@+id/t1"
+                android:gravity="center"
+                style="@style/st_14_text"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/assortment_will_resume"/>
+
+            <TextView
+                android:id="@+id/request"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_button"
+                style="@style/st_14_white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_40"
+                android:layout_marginBottom="@dimen/pad_40"
+                android:background="@color/text"
+                android:gravity="center"
+                android:text="@string/let_me_know" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/error_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/pad_172"
+                android:src="@drawable/no_connect" />
+
+            <!--<com.dpcsa.compon.custom_components.SimpleTextView-->
+                <!--android:id="@+id/text_tit"-->
+                <!--style="@style/st_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/img_no"-->
+                <!--android:layout_marginLeft="@dimen/pad_25"-->
+                <!--android:layout_marginRight="@dimen/pad_25"-->
+                <!--android:layout_marginTop="@dimen/pad_25"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerHorizontal="false"-->
+                <!--android:text="@string/er_connect_title"-->
+                <!--app:alias="title"/>-->
+
+            <!--<com.dpcsa.compon.custom_components.SimpleTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--style="@style/st_14_text"-->
+                <!--android:layout_below="@+id/text_tit"-->
+                <!--android:layout_marginLeft="@dimen/pad_25"-->
+                <!--android:layout_marginRight="@dimen/pad_25"-->
+                <!--android:layout_marginTop="@dimen/pad_25"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="@string/er_connect"-->
+                <!--app:alias="message"/>-->
+
+            <com.dpcsa.compon.custom_components.SimpleTextView
+                android:id="@+id/text_tit"
+                style="@style/st_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_no"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25"
+                android:gravity="center"
+                android:layout_centerHorizontal="false"
+                app:alias="title"/>
+
+            <com.dpcsa.compon.custom_components.SimpleTextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/st_14_text"
+                android:layout_below="@+id/text_tit"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                app:alias="message"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

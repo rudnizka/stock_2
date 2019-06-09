@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bar"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:textSize="@dimen/pad_18" />
+
+        <LinearLayout
+            android:id="@+id/sel_lang"
+            android:layout_width="@dimen/pad_80"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="false"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lang_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/pad_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_down"
+                android:layout_marginRight="@dimen/pad_14"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/apply"
+        android:layout_below="@+id/tool">
+
+        <LinearLayout
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mainImagePath"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_120"
+                android:scaleType="centerCrop"
+                android:src="@drawable/about_us"/>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/pad_240">-->
+
+                <!--<com.dpcsa.compon.custom_components.SimpleImageView-->
+                    <!--android:id="@+id/fon"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--app:blur="21" />-->
+
+                <!--<com.dpcsa.compon.custom_components.SimpleImageView-->
+                    <!--android:id="@+id/ova"-->
+                    <!--android:layout_width="@dimen/pad_120"-->
+                    <!--android:layout_height="@dimen/pad_120"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--app:oval="true" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/ttt"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/pad_40"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/pad_24"-->
+                    <!--android:text="TTT"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_24"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/pad_24"
+                    android:layout_height="@dimen/pad_24"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_10"
+                    android:text="@string/show_video"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/pad_12"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_1"
+                style="@style/st_14_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_20"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/about_text_1"/>
+
+            <TextView
+                android:id="@+id/text2"
+                style="@style/st_14_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/about_text_2"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/full_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/pad_36"
+                style="@style/st_12_blue"
+                android:text="@string/full_desc"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/st_18_text"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_10"
+                android:text="@string/hotline"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_42"
+                style="@style/st_18_text"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/pad_25"
+                android:layout_marginRight="@dimen/pad_25"
+                android:layout_marginTop="@dimen/pad_4"
+                android:layout_marginBottom="@dimen/pad_24"
+                android:gravity="center_vertical"
+                android:text="067 890 98 76"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/apply"
+        style="@style/st_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/pad_25"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:layout_marginRight="@dimen/pad_25"
+        android:layout_marginTop="@dimen/pad_4"
+        android:background="@color/text"
+        android:gravity="center"
+        android:text="@string/contact_us" />
+
+</RelativeLayout>

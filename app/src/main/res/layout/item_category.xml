@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pad_145"
+    android:orientation="horizontal">
+
+    <com.dpcsa.compon.custom_components.SimpleImageView
+        android:id="@+id/mainImagePath"
+        android:layout_width="@dimen/pad_140"
+        android:layout_height="@dimen/pad_140"
+        android:layout_marginLeft="@dimen/pad_25"
+        android:scaleType="centerCrop"
+        app:placeholder="@drawable/sms"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/st_14_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_140"
+        android:background="@color/gray_e"
+        android:layout_marginRight="@dimen/pad_25"
+        android:paddingLeft="@dimen/pad_10"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.02"/>
+</LinearLayout>

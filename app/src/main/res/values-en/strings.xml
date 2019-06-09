@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // NETWORK ERROR
+    <string name="er_title_def">Attention !</string>
+    <string name="er_message">Error in server message text</string>
+    <string name="er_connect_title">No Internet connection</string>
+    <string name="er_connect">Check your access to WI-FI or mobile connection settings</string>
+    <string name="er_timeout">Long does not receive a response from the server</string>
+    <string name="er_server_error">Server error</string>
+    <string name="er_json_syntax">Json syntax error</string>
+
+
+    <string name="contin">Continue</string>
+    <string name="apply">Apply</string>
+    <string name="products">Products</string>
+    <string name="service">Service</string>
+    <string name="about">About us</string>
+    <string name="news">News</string>
+
+    // Language
+    <string name="sel_lang">Choose language</string>
+
+    // Categories
+    <string name="sht">items</string>
+    <string name="no_products">There are no products in this category</string>
+    <string name="assortment_will_resume">Our assortment will resume \nin the nearest future</string>
+    <string name="let_me_know">Let me know about arrival</string>
+
+    // Product
+    <string name="charact">General characteristics</string>
+    <string name="show_video">Watch video</string>
+    <string name="requisition">Leave request</string>
+    <string name="thanks">Thank you for the order</string>
+    <string name="operator_contact_you">Our operator will contact you in the nearest future to clarify the details</string>
+
+    // Map
+    <string name="cost">The cost of repair services</string>
+    <string name="repair_sites">Service centers</string>
+    <string name="fast">Fast up - to 3 days + swap fund</string>
+    <string name="qualitatively">Hight quality - 6 months guarantee!</string>
+    <string name="convenient">It is convenient - service centers around Ukraine</string>
+    <string name="free">Free collection of equipment!</string>
+    <string name="choose_site">Choose a service center</string>
+    <string name="type_repair">Type of repair</string>
+    <string name="count">Count</string>
+    <string name="uah_item">uah/item</string>
+    <string name="uah">\u0020uah</string>
+    <string name="sum_all">Total price:</string>
+
+    // COUNTRY
+    <string name="select_country">Select country</string>
+
+    // ITEM_FORM
+    <string name="leave_request">Leave request</string>
+    <string name="your_order">Your order</string>
+    <string name="your_name">Your name</string>
+    <string name="your_phone">Your phone number</string>
+    <string name="add_comment">Add a comment</string>
+    <string name="your_comment">Your comment</string>
+    <string name="edit">Edit</string>
+    <string name="write_smth_here">Write smth here…</string>
+    <string name="send">Send</string>
+    <string name="all_list">Show all</string>
+    <string name="clear">Clear</string>
+    <string name="comment">Comment</string>
+
+    // NEWS
+    <string name="No_current_news">No current news</string>
+    <string name="interesting_information">In the nearest future we will share some interesting information</string>
+
+    // About
+    <string name="contact_us">Contact us</string>
+    <string name="hotline">Hotline</string>
+    <string name="full_desc">Full description</string>
+    <string name="hide">Hide</string>
+    <!--<string name="about_text">ООО Система модернизации складов.\nГлавная Миссия компании: способствовать повышению эффективности бизнеса наших клиентов. Наша цель – построить компанию международного уровня, путем создания качественной продукции. Комплексные решения компании «СМС» – это разработка, проектирование, производство, монтаж и дальнейшее техническое обслуживание транспортировочных и сортировочных линий согласно пожеланиям заказчика. А именно – производственные линии по сортировке грузов, переработке ягод, фруктов, орехов. В случае необходимости срочного ремонта штабелеров или иной электро и гидравлической техники – существует бригада оперативного реагирования и сервисные службы по всей территории Украины.</string>-->
+    <string name="about_text_1">Limited Liability Company «Storehouses Modernization Systems»\n«Storehouses Modernization Systems» is a Ukrainian manufacturing company.\nThe main mission of the company is to contribute to improving the efficiency of our customers\' business.\nOur goal is to build an international company by creating quality products.</string>
+    <string name="about_text_2">Complex solutions of the company «SMS» - is the development, design, production, installation and further maintenance of transport and sorting lines according to the wishes of the customer.\nIncluding sorting complex for waste processing – SHW(solid household waste).\nThe company SMS is one of the leaders in the production of complex solutions for warehouse automation since 2006, having become not only the holder of the title of «Industry Leader» (2010, 2012, 2015, 2017, 2018) over the years. In 2015, an international quality certificate ISO 9001: 2008, ISO 9001: 2015, TSU, was received.\nIt is also a member of the Polish-Ukrainian Chamber of Commerce. Is the owner of a portfolio of unique developments and exclusive solutions for more than 100 enterprises in Ukraine and Europe.</string>
+    <string name="write_us">Contact us</string>
+    <string name="add_com">Add a comment</string>
+    <string name="send_com">Your comment has been sent</string>
+    <string name="appreciate_attention">We appreciate your attention.\nYour answers helps us to improve our services</string>
+
+    <string-array name="prod_grammar">
+        <item>product</item>
+        <item>products</item>
+        <item>products</item>
+    </string-array>
+</resources>
